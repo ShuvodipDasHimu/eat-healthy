@@ -160,3 +160,75 @@ body {
     margin-left: -410px;
   }
 }
+
+/* Main Section */
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Female Section */
+
+.female-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 198px;
+  background-image: url("/images/shapes/7.png");
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.female-section img {
+  width: 338px;
+  margin-top: 64px;
+}
+
+.female-section-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* justify-content: space-around; */
+}
+
+.female-section h1 {
+  color: #707070;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.female-section p {
+  width: 444px;
+  text-align: justify;
+  line-height: 1.7;
+  font-family: "Manrope", "Montserrat";
+  font-size: 18px;
+  color: #18191F;
+}
+
+.female-section .button-div {
+  margin-top: 70px;
+  /* padding-top: 90px; */
+}
+
+/* Responsive Female Section */
+
+@media screen and (max-width:576px) {
+  .female-section {
+    flex-direction: column;
+    background-image: none;
+    background-color: #FEF3EC;
+    max-width: 100vw;
+    gap: 40px;
+  }
+
+  .female-section img {
+    width: 280px;
+  }
+
+  .female-section .button-div {
+    margin-top: 20px;
+  }
+}
